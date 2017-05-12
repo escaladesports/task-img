@@ -17,7 +17,7 @@ module.exports = function(config, cb){
 
 	function process(cb){
 		try{
-			imgConfig = freshRequire(`${process.cwd()}/${config.src}/${config.img}/_config.js`, require)
+			imgConfig = freshRequire(`../../${config.src}/${config.img}/_config.js`, require)
 		}
 		catch(e){
 			imgConfig = []
@@ -120,5 +120,3 @@ module.exports = function(config, cb){
 		})
 		.catch(console.error)
 }
-
-
